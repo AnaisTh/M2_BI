@@ -257,10 +257,10 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="copyOfout">
       <column comment="" defaultValue="" key="false" length="-1" name="Age" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gravite" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Sexe" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Trajet" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategorieUsager" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gravite" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Sexe" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Trajet" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CategorieUsager" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="num_veh" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Num_Acc" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
     </metadata>
@@ -269,10 +269,10 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout">
         <mapperTableEntries name="Age" expression="2018-row2.an_nais" type="id_Integer"/>
-        <mapperTableEntries name="Gravite" expression="row2.grav " type="id_Integer"/>
-        <mapperTableEntries name="Sexe" expression="row2.sexe " type="id_Integer"/>
-        <mapperTableEntries name="Trajet" expression="row2.trajet " type="id_Integer"/>
-        <mapperTableEntries name="CategorieUsager" expression="row2.catu " type="id_Integer"/>
+        <mapperTableEntries name="Gravite" expression="(row2.grav==1 ? &quot;Indemne&quot; : row2.grav==2 ? &quot;Tué&quot; : row2.grav==3 ? &quot;Blessé Hospitalisé&quot;: row2.grav==4 ? &quot;Blessé Léger&quot; : &quot;Indéfini&quot;)" type="id_String"/>
+        <mapperTableEntries name="Sexe" expression="(row2.sexe==1 ? &quot;Masculin&quot; : row2.sexe==2 ? &quot;Feminin&quot; : &quot;Indéfini&quot;)" type="id_String"/>
+        <mapperTableEntries name="Trajet" expression="(row2.trajet==1 ? &quot;Domicile - Travail&quot; : row2.trajet==2 ? &quot;Domicile - Ecole&quot; : row2.trajet==3 ? &quot;Courses - Achats&quot;: row2.trajet==4 ? &quot;Utilisation professionnelle&quot; : row2.trajet==5 ? &quot;Promenade - Loisirs&quot; : row2.trajet==9 ? &quot;Autre&quot; : &quot;Indéfini&quot;)" type="id_String"/>
+        <mapperTableEntries name="CategorieUsager" expression="(row2.catu==1 ? &quot;Conducteur&quot; : row2.catu==2 ? &quot;Passager&quot; : row2.catu==3 ? &quot;Piéton&quot;: row2.catu==4 ? &quot;Piéton en roller ou en trottinette&quot; : &quot;Indéfini&quot;) " type="id_String"/>
         <mapperTableEntries name="num_veh" expression="row2.num_veh " type="id_String"/>
         <mapperTableEntries name="Num_Acc" expression="row2.Num_Acc " type="id_Long"/>
       </outputTables>
@@ -338,10 +338,10 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="tFileOutputExcel_2">
       <column comment="" defaultValue="" key="false" length="-1" name="Age" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gravite" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Sexe" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Trajet" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategorieUsager" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gravite" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Sexe" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Trajet" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CategorieUsager" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="num_veh" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Num_Acc" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
     </metadata>
