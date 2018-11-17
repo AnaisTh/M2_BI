@@ -338,8 +338,8 @@
     <elementParameter field="FILE" name="FILENAME" value="&quot;E:/ProjetBigData/M2_BI/donnees/donnees_premierTraitement/caracteristiques/motie-caracteristique.csv&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
     <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
     <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
@@ -365,7 +365,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
