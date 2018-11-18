@@ -112,7 +112,9 @@
     <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_*.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_2005.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_2006.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_2007.csv&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
@@ -240,26 +242,6 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="XML_Accident"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="res">
-      <column comment="" key="false" length="-1" name="Num_ACC" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Annee" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Mois" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Jour" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Heure" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Minute" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Localisation" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConditionMeteo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata name="out1">
-      <column comment="" key="false" length="-1" name="Num_ACC" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Annee" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Mois" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Jour" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Heure" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Minute" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Localisation" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConditionMeteo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
     <metadata connector="FLOW" name="out2">
       <column comment="" key="true" length="-1" name="Num_ACC" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Annee" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -271,35 +253,15 @@
       <column comment="" key="false" length="-1" name="ConditionMeteo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="res">
-        <mapperTableEntries name="Num_ACC" expression="row2.Num_Acc     " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row2.an  " type="id_String"/>
-        <mapperTableEntries name="Mois" expression="row2.mois     " type="id_String"/>
-        <mapperTableEntries name="Jour" expression="row2.jour     " type="id_String"/>
-        <mapperTableEntries name="Heure" expression="row2.hrmn.toString().length()==4?row2.hrmn.toString().substring(0,2):row2.hrmn.toString().length()==3?row2.hrmn.toString().substring(0,1):&quot;0&quot;   " type="id_String"/>
-        <mapperTableEntries name="Minute" expression="row2.hrmn.toString().length()==4?row2.hrmn.toString().substring(2,4):row2.hrmn.toString().length()==3?row2.hrmn.toString().substring(1,3):row2.hrmn.toString().length()==2?row2.hrmn.toString().substring(0,2):row2.hrmn   " type="id_String"/>
-        <mapperTableEntries name="Localisation" expression="row2.agg==1?&quot;Hors agglomération&quot;:row2.agg==2?&quot;Agglomération&quot;:&quot;Indéfini&quot; " type="id_String"/>
-        <mapperTableEntries name="ConditionMeteo" expression="row2.atm==1?&quot;Normale&quot;:row2.atm==2?&quot;Pluie légère&quot;:row2.atm==3?&quot;Pluie forte&quot;:row2.atm==4?&quot;Neige - grêle&quot;:row2.atm==5?&quot;Brouillard - fumée&quot;:row2.atm==6?&quot;Vent fort - tempête&quot;:row2.atm==7?&quot;Temps éblouissant&quot;:row2.atm==8?&quot;Temps couvert&quot;:row2.atm==9?&quot;Autre&quot;:&quot;Indéfini&quot; " type="id_String"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="Num_ACC" expression="row2.Num_Acc      " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row2.an   " type="id_String"/>
-        <mapperTableEntries name="Mois" expression="row2.mois      " type="id_String"/>
-        <mapperTableEntries name="Jour" expression="row2.jour      " type="id_String"/>
-        <mapperTableEntries name="Heure" expression="row2.hrmn.toString().length()==4?row2.hrmn.toString().substring(0,2):row2.hrmn.toString().length()==3?row2.hrmn.toString().substring(0,1):&quot;0&quot;    " type="id_String"/>
-        <mapperTableEntries name="Minute" expression="row2.hrmn.toString().length()==4?row2.hrmn.toString().substring(2,4):row2.hrmn.toString().length()==3?row2.hrmn.toString().substring(1,3):row2.hrmn.toString().length()==2?row2.hrmn.toString().substring(0,2):row2.hrmn    " type="id_String"/>
-        <mapperTableEntries name="Localisation" expression="row2.agg==1?&quot;Hors agglomération&quot;:row2.agg==2?&quot;Agglomération&quot;:&quot;Indéfini&quot;  " type="id_String"/>
-        <mapperTableEntries name="ConditionMeteo" expression="row2.atm==1?&quot;Normale&quot;:row2.atm==2?&quot;Pluie légère&quot;:row2.atm==3?&quot;Pluie forte&quot;:row2.atm==4?&quot;Neige - grêle&quot;:row2.atm==5?&quot;Brouillard - fumée&quot;:row2.atm==6?&quot;Vent fort - tempête&quot;:row2.atm==7?&quot;Temps éblouissant&quot;:row2.atm==8?&quot;Temps couvert&quot;:row2.atm==9?&quot;Autre&quot;:&quot;Indéfini&quot;  " type="id_String"/>
-      </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="Num_ACC" expression="row2.Num_Acc       " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row2.an    " type="id_String"/>
+        <mapperTableEntries name="Annee" expression="row2.an.length()==1?&quot;200&quot;+row2.an:row2.an.length()==2?&quot;20&quot;+row2.an:&quot;Indisponible&quot; " type="id_String"/>
         <mapperTableEntries name="Mois" expression="row2.mois       " type="id_String"/>
         <mapperTableEntries name="Jour" expression="row2.jour       " type="id_String"/>
         <mapperTableEntries name="Heure" expression="row2.hrmn.toString().length()==4?row2.hrmn.toString().substring(0,2):row2.hrmn.toString().length()==3?row2.hrmn.toString().substring(0,1):&quot;0&quot;     " type="id_String"/>
-        <mapperTableEntries name="Minute" expression="row2.hrmn.toString().length()==4?row2.hrmn.toString().substring(2,4):row2.hrmn.toString().length()==3?row2.hrmn.toString().substring(1,3):row2.hrmn.toString().length()==2?row2.hrmn.toString().substring(0,2):row2.hrmn     " type="id_String"/>
+        <mapperTableEntries name="Minute" expression="row2.hrmn.toString().length()==4?row2.hrmn.toString().substring(2,4):row2.hrmn.toString().length()==3?row2.hrmn.toString().substring(1,3):row2.hrmn.toString().length()==2?row2.hrmn.toString().substring(0,2):&quot;0&quot;+row2.hrmn " type="id_String"/>
         <mapperTableEntries name="Localisation" expression="row2.agg==1?&quot;Hors agglomération&quot;:row2.agg==2?&quot;Agglomération&quot;:&quot;Indéfini&quot;   " type="id_String"/>
         <mapperTableEntries name="ConditionMeteo" expression="row2.atm==1?&quot;Normale&quot;:row2.atm==2?&quot;Pluie légère&quot;:row2.atm==3?&quot;Pluie forte&quot;:row2.atm==4?&quot;Neige - grêle&quot;:row2.atm==5?&quot;Brouillard - fumée&quot;:row2.atm==6?&quot;Vent fort - tempête&quot;:row2.atm==7?&quot;Temps éblouissant&quot;:row2.atm==8?&quot;Temps couvert&quot;:row2.atm==9?&quot;Autre&quot;:&quot;Indéfini&quot;   " type="id_String"/>
       </outputTables>
@@ -335,7 +297,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/ProjetBigData/M2_BI/donnees/donnees_premierTraitement/caracteristiques/motie-caracteristique.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/ProjetBigData/M2_BI/donnees/donnees_premierTraitement/accident/meteo-localisation-temps.csv&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
@@ -501,16 +463,6 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="XML_Accident"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="res2" name="res2">
-      <column comment="" key="false" length="-1" name="Num_ACC" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Annee" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Mois" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Jour" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Heure" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Minute" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Localisation" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ConditionMeteo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
     <metadata connector="FLOW" name="res1">
       <column comment="" key="false" length="-1" name="Num_ACC" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Annee" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -522,25 +474,15 @@
       <column comment="" key="false" length="-1" name="ConditionMeteo" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="res2">
-        <mapperTableEntries name="Num_ACC" expression="row1.Num_Acc      " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row1.an   " type="id_String"/>
-        <mapperTableEntries name="Mois" expression="row1.mois      " type="id_String"/>
-        <mapperTableEntries name="Jour" expression="row1.jour      " type="id_String"/>
-        <mapperTableEntries name="Heure" expression="row1.hrmn.toString().length()==4?row1.hrmn.toString().substring(0,2):row1.hrmn.toString().length()==3?row1.hrmn.toString().substring(0,1):&quot;0&quot; " type="id_String"/>
-        <mapperTableEntries name="Minute" expression="row1.hrmn.toString().length()==4?row1.hrmn.toString().substring(2,4):row1.hrmn.toString().length()==3?row1.hrmn.toString().substring(1,3):row1.hrmn.toString().length()==2?row1.hrmn.toString().substring(0,2):row1.hrmn " type="id_String"/>
-        <mapperTableEntries name="Localisation" expression="row1.agg==1?&quot;Hors agglomération&quot;:row1.agg==2?&quot;Agglomération&quot;:&quot;Indéfini&quot; " type="id_String"/>
-        <mapperTableEntries name="ConditionMeteo" expression="row1.atm==1?&quot;Normale&quot;:row1.atm==2?&quot;Pluie légère&quot;:row1.atm==3?&quot;Pluie forte&quot;:row1.atm==4?&quot;Neige - grêle&quot;:row1.atm==5?&quot;Brouillard - fumée&quot;:row1.atm==6?&quot;Vent fort - tempête&quot;:row1.atm==7?&quot;Temps éblouissant&quot;:row1.atm==8?&quot;Temps couvert&quot;:row1.atm==9?&quot;Autre&quot;:&quot;Indéfini&quot; " type="id_String"/>
-      </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="res1">
         <mapperTableEntries name="Num_ACC" expression="row1.Num_Acc       " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row1.an    " type="id_String"/>
+        <mapperTableEntries name="Annee" expression="row1.an.length()==1?&quot;200&quot;+row1.an:row2.an.length()==2?&quot;20&quot;+row1.an:&quot;Indisponible&quot; " type="id_String"/>
         <mapperTableEntries name="Mois" expression="row1.mois       " type="id_String"/>
         <mapperTableEntries name="Jour" expression="row1.jour       " type="id_String"/>
         <mapperTableEntries name="Heure" expression="row1.hrmn.toString().length()==4?row1.hrmn.toString().substring(0,2):row1.hrmn.toString().length()==3?row1.hrmn.toString().substring(0,1):&quot;0&quot;  " type="id_String"/>
-        <mapperTableEntries name="Minute" expression="row1.hrmn.toString().length()==4?row1.hrmn.toString().substring(2,4):row1.hrmn.toString().length()==3?row1.hrmn.toString().substring(1,3):row1.hrmn.toString().length()==2?row1.hrmn.toString().substring(0,2):row1.hrmn  " type="id_String"/>
+        <mapperTableEntries name="Minute" expression="row1.hrmn.toString().length()==4?row1.hrmn.toString().substring(2,4):row1.hrmn.toString().length()==3?row1.hrmn.toString().substring(1,3):row1.hrmn.toString().length()==2?row1.hrmn.toString().substring(0,2):&quot;0&quot;+row1.hrmn " type="id_String"/>
         <mapperTableEntries name="Localisation" expression="row1.agg==1?&quot;Hors agglomération&quot;:row1.agg==2?&quot;Agglomération&quot;:&quot;Indéfini&quot;  " type="id_String"/>
         <mapperTableEntries name="ConditionMeteo" expression="row1.atm==1?&quot;Normale&quot;:row1.atm==2?&quot;Pluie légère&quot;:row1.atm==3?&quot;Pluie forte&quot;:row1.atm==4?&quot;Neige - grêle&quot;:row1.atm==5?&quot;Brouillard - fumée&quot;:row1.atm==6?&quot;Vent fort - tempête&quot;:row1.atm==7?&quot;Temps éblouissant&quot;:row1.atm==8?&quot;Temps couvert&quot;:row1.atm==9?&quot;Autre&quot;:&quot;Indéfini&quot;  " type="id_String"/>
       </outputTables>
