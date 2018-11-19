@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_IBN0YeglEei0du-bAOr0cw" name="departements" dataPackage="_IBN0YuglEei0du-bAOr0cw" Server="Localhost 127.0.0.1" FilePath="C:/Users/enzop/Desktop/Codification départements et régions.xlsx" Encoding="ISO-8859-15" UseHeader="true" HeaderValue="1" FooterValue="0" LimitValue="" FirstLineCaption="true" SheetName="Departements" firstColumn="1" lastColumn="" thousandSeparator="," decimalSeparator="." sheetList="Departements:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_IBN0YuglEei0du-bAOr0cw" name="default" dataManager="_IBN0YeglEei0du-bAOr0cw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_IBObcOglEei0du-bAOr0cw" id="_921EAOgkEei0du-bAOr0cw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IBObceglEei0du-bAOr0cw" label="CodeRegion" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IBObcuglEei0du-bAOr0cw" label="CodeDep" length="3" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IBObc-glEei0du-bAOr0cw" label="CodeInseeDonnees" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IBObdOglEei0du-bAOr0cw" label="NomDepartement" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IBObdeglEei0du-bAOr0cw" label="Territoire" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
