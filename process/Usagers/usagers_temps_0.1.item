@@ -106,9 +106,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_wyZgAOp3EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2DbxIOv-EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_wyZgAOp3EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_2DbxIOv-EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2005.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -124,7 +124,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_wyZgAOp3EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_2DbxIOv-EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -195,32 +195,32 @@
     <elementParameter field="TEXT" name="LABEL" value="usagers2005"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
-      <column comment="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="place" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="catu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="grav" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sexe" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="trajet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="secu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="locp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="actp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="etatp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="an_nais" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="num_veh" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="place" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="catu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="grav" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="sexe" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="trajet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="secu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="locp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="actp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="etatp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="an_nais" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="num_veh" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="place" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="catu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="grav" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sexe" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="trajet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="secu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="locp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="actp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="etatp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="an_nais" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="num_veh" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="place" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="catu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="grav" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="sexe" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="trajet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="secu" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="locp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="actp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="etatp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="an_nais" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="num_veh" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -254,7 +254,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Num_Acc" expression="row2.Num_Acc  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row2.num_veh  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row3.an  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row3.an.length()==1?&quot;200&quot;+row3.an:row3.an.length()==2?&quot;20&quot;+row3.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row3.mois  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row3.jour  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row3.hrmn.toString().length()==4?row3.hrmn.toString().substring(0,2):row3.hrmn.toString().length()==3?row3.hrmn.toString().substring(0,1):&quot;0&quot;      " type="id_String" nullable="true"/>
@@ -297,9 +297,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_43y50Op3EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_5obh4Ov-EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_43y50Op3EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_5obh4Ov-EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2005.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -315,7 +315,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_43y50Op3EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_5obh4Ov-EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -402,45 +402,45 @@
     <elementParameter field="TEXT" name="LABEL" value="cara2005"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
-      <column comment="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="an" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="jour" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="hrmn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="lum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="agg" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Column7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="atm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="col" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Column10" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="24" name="adr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="gps" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Column14" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="dep" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="an" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="jour" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="hrmn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="lum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="agg" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Column7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="atm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="col" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Column10" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="24" name="adr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="gps" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Column14" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="dep" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="an" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="jour" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="hrmn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="lum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="agg" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Column7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="atm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="col" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Column10" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="24" name="adr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="gps" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Column14" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="dep" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="an" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="mois" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="jour" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="hrmn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="lum" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="agg" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Column7" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="atm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="col" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Column10" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="24" name="adr" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="gps" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Column14" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="dep" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1120">
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1344">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="tUnite_1">
@@ -456,9 +456,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1312">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_14" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kU6ZsOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-vY0oOv-EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kU6ZsOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_-vY0oOv-EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2011.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -474,7 +474,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_kU6ZsOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_-vY0oOv-EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -604,7 +604,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out7">
         <mapperTableEntries name="Num_Acc" expression="row14.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row14.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row15.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row15.an.length()==1?&quot;200&quot;+row15.an:row15.an.length()==2?&quot;20&quot;+row15.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row15.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row15.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row15.hrmn.toString().length()==4?row15.hrmn.toString().substring(0,2):row15.hrmn.toString().length()==3?row15.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -647,9 +647,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_15" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mFOZYOp8EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_DQm9EOv_EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_mFOZYOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_DQm9EOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2011.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -665,7 +665,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_mFOZYOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_DQm9EOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -793,9 +793,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="2464">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_26" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ESJLUOp6EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_HqFewOv_EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ESJLUOp6EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_HqFewOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers-2017.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -811,7 +811,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_ESJLUOp6EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_HqFewOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -941,7 +941,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out13">
         <mapperTableEntries name="Num_Acc" expression="row26.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row26.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row27.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row27.an.length()==1?&quot;200&quot;+row27.an:row27.an.length()==2?&quot;20&quot;+row27.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row27.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row27.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row27.hrmn.toString().length()==4?row27.hrmn.toString().substring(0,2):row27.hrmn.toString().length()==3?row27.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -984,9 +984,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="2560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_27" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_MifwkOp9EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_LeVzgOv_EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_MifwkOp9EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_LeVzgOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques-2017.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -1002,7 +1002,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_MifwkOp9EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_LeVzgOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -1131,7 +1131,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/BI/M2_BI/donnees/donnees_premierTraitement/usagers/temps.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace/PROJETBIM2/donnees/donnees_premierTraitement/usagers/temps.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -1170,9 +1170,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_AzyqkOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_6LGUoOv_EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_AzyqkOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_6LGUoOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2006.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -1188,7 +1188,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_AzyqkOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_6LGUoOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -1318,7 +1318,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="Num_Acc" expression="row4.Num_Acc  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row4.num_veh  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row5.an " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row5.an.length()==1?&quot;200&quot;+row5.an:row5.an.length()==2?&quot;20&quot;+row5.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row5.mois  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row5.jour  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row5.hrmn.toString().length()==4?row5.hrmn.toString().substring(0,2):row5.hrmn.toString().length()==3?row5.hrmn.toString().substring(0,1):&quot;0&quot;      " type="id_String" nullable="true"/>
@@ -1361,9 +1361,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_GqibgOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-BfXYOv_EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_GqibgOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_-BfXYOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2006.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -1379,7 +1379,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_GqibgOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_-BfXYOv_EeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -1507,9 +1507,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_NOXU4Op5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_CDwS8OwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_NOXU4Op5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_CDwS8OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2007.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -1525,7 +1525,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_NOXU4Op5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_CDwS8OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -1655,7 +1655,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="Num_Acc" expression="row6.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row6.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row7.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row7.an.length()==1?&quot;200&quot;+row7.an:row7.an.length()==2?&quot;20&quot;+row7.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row7.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row7.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row7.hrmn.toString().length()==4?row7.hrmn.toString().substring(0,2):row7.hrmn.toString().length()==3?row7.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -1698,9 +1698,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_7" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_SZTBUOp8EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_FgtiAOwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_SZTBUOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_FgtiAOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2007.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -1716,7 +1716,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_SZTBUOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_FgtiAOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -1844,9 +1844,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_12" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_S0M8AOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_JuDFIOwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_S0M8AOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_JuDFIOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2008.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -1862,7 +1862,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_S0M8AOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_JuDFIOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -1992,7 +1992,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="Num_Acc" expression="row12.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row12.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row13.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row13.an.length()==1?&quot;200&quot;+row13.an:row13.an.length()==2?&quot;20&quot;+row13.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row13.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row13.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row13.hrmn.toString().length()==4?row13.hrmn.toString().substring(0,2):row13.hrmn.toString().length()==3?row13.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -2035,9 +2035,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="832">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_13" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_GMrTcOp8EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_OEgIAOwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_GMrTcOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_OEgIAOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2008.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -2053,7 +2053,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_GMrTcOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_OEgIAOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -2180,6 +2180,10 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_8" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_SByc8OwAEeiBzIz4hhswdw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_SByc8OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2009.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -2195,7 +2199,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_X88XcOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_SByc8OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -2325,7 +2329,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out5">
         <mapperTableEntries name="Num_Acc" expression="row8.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row8.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row9.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row9.an.length()==1?&quot;200&quot;+row9.an:row9.an.length()==2?&quot;20&quot;+row9.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row9.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row9.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row9.hrmn.toString().length()==4?row9.hrmn.toString().substring(0,2):row9.hrmn.toString().length()==3?row9.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -2367,6 +2371,10 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_9" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_VRhIUOwAEeiBzIz4hhswdw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_VRhIUOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2009.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -2382,7 +2390,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_vsgcsOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_VRhIUOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -2510,9 +2518,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_10" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dzrhUOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_a71m0OwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_dzrhUOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_a71m0OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2010.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -2528,7 +2536,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_dzrhUOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_a71m0OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -2658,7 +2666,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out6">
         <mapperTableEntries name="Num_Acc" expression="row10.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row10.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row11.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row11.an.length()==1?&quot;200&quot;+row11.an:row11.an.length()==2?&quot;20&quot;+row11.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row11.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row11.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row11.hrmn.toString().length()==4?row11.hrmn.toString().substring(0,2):row11.hrmn.toString().length()==3?row11.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -2701,9 +2709,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_11" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_geYFoOp8EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_fEv88OwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_geYFoOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_fEv88OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2010.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -2719,7 +2727,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_geYFoOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_fEv88OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -2847,9 +2855,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1504">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_16" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_p_hMEOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_jmK5sOwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_p_hMEOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jmK5sOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2012.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -2865,7 +2873,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_p_hMEOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_jmK5sOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -2995,7 +3003,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out8">
         <mapperTableEntries name="Num_Acc" expression="row16.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row16.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row17.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row17.an.length()==1?&quot;200&quot;+row17.an:row17.an.length()==2?&quot;20&quot;+row17.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row17.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row17.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row17.hrmn.toString().length()==4?row17.hrmn.toString().substring(0,2):row17.hrmn.toString().length()==3?row17.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -3038,9 +3046,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1600">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_17" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_rqYEAOp8EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_nE_xAOwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_rqYEAOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_nE_xAOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2012.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -3056,7 +3064,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_rqYEAOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_nE_xAOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -3184,9 +3192,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1696">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_18" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_v4RIIOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_rOvNkOwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_v4RIIOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_rOvNkOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2013.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -3202,7 +3210,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_v4RIIOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_rOvNkOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -3332,7 +3340,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out9">
         <mapperTableEntries name="Num_Acc" expression="row18.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row18.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row19.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row19.an.length()==1?&quot;200&quot;+row19.an:row19.an.length()==2?&quot;20&quot;+row19.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row19.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row19.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row19.hrmn.toString().length()==4?row19.hrmn.toString().substring(0,2):row19.hrmn.toString().length()==3?row19.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -3375,9 +3383,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1792">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_19" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2QgVMOp8EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_uq3WMOwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_2QgVMOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_uq3WMOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2013.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -3393,7 +3401,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_2QgVMOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_uq3WMOwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -3521,9 +3529,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1888">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_20" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1ZG6gOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zc5h0OwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_1ZG6gOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_zc5h0OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2014.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -3539,7 +3547,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_1ZG6gOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_zc5h0OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -3669,7 +3677,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out10">
         <mapperTableEntries name="Num_Acc" expression="row20.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row20.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row21.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row21.an.length()==1?&quot;200&quot;+row21.an:row21.an.length()==2?&quot;20&quot;+row21.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row21.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row21.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row21.hrmn.toString().length()==4?row21.hrmn.toString().substring(0,2):row21.hrmn.toString().length()==3?row21.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -3712,9 +3720,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="1984">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_21" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_8VRUAOp8EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_3pKG4OwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_8VRUAOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_3pKG4OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2014.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -3730,7 +3738,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_8VRUAOp8EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_3pKG4OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -3858,9 +3866,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="2080">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_22" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_68zzoOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_t47tgOwBEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_68zzoOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_t47tgOwBEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2015.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -3876,7 +3884,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_68zzoOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_t47tgOwBEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -4006,7 +4014,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out11">
         <mapperTableEntries name="Num_Acc" expression="row22.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row22.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row23.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row23.an.length()==1?&quot;200&quot;+row23.an:row23.an.length()==2?&quot;20&quot;+row23.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row23.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row23.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row23.hrmn.toString().length()==4?row23.hrmn.toString().substring(0,2):row23.hrmn.toString().length()==3?row23.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -4049,9 +4057,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="2176">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_23" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Bny9kOp9EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__OFQ4OwAEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Bny9kOp9EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__OFQ4OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2015.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -4067,7 +4075,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_Bny9kOp9EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="__OFQ4OwAEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -4195,9 +4203,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="2272">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_24" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__ncWwOp5EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Cqz2cOwBEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__ncWwOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Cqz2cOwBEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/usagers/usagers_2016.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -4213,7 +4221,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="__ncWwOp5EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_Cqz2cOwBEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -4343,7 +4351,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out12">
         <mapperTableEntries name="Num_Acc" expression="row24.Num_Acc   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row24.num_veh   " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Annee" expression="row25.an   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Annee" expression="row25.an.length()==1?&quot;200&quot;+row25.an:row25.an.length()==2?&quot;20&quot;+row25.an:&quot;Indisponible&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row25.mois   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row25.jour   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" expression="row25.hrmn.toString().length()==4?row25.hrmn.toString().substring(0,2):row25.hrmn.toString().length()==3?row25.hrmn.toString().substring(0,1):&quot;0&quot;       " type="id_String" nullable="true"/>
@@ -4386,9 +4394,9 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="2368">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_25" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_HCqq0Op9EeifirWnwlXHaQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_IL4SUOwBEeiBzIz4hhswdw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_HCqq0Op9EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_IL4SUOwBEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/caractéristiques/caracteristiques_2016.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -4404,7 +4412,7 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_HCqq0Op9EeifirWnwlXHaQ - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_IL4SUOwBEeiBzIz4hhswdw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>

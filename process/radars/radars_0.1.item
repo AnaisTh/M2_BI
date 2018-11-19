@@ -106,9 +106,9 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_UgrKAOi6Eei35YtxHIs5Wg" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_BNiukOv-EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/radars.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/BI2/M2_BI/donnees/donnees_radar/radars.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Sheet&quot;"/>
@@ -367,7 +367,7 @@
         <mapperTableEntries name="Pays" expression="&quot;France&quot; " type="id_String"/>
         <mapperTableEntries name="Territoire" expression="row4.Territoire  " type="id_String"/>
         <mapperTableEntries name="Region" expression="row5.NomRegion " type="id_String"/>
-        <mapperTableEntries name="Departement" expression="row2.Departement  " type="id_String"/>
+        <mapperTableEntries name="Departement" expression="row4.NomDepartement " type="id_String"/>
         <mapperTableEntries name="Commune" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Latitude" expression="&quot;&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Longitude" expression="&quot;&quot; " type="id_String" nullable="true"/>
@@ -407,9 +407,9 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_4" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_IBN0YOglEei0du-bAOr0cw" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_s-uE0Ov9EeiBzIz4hhswdw" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/Codification départements et régions.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/BI2/M2_BI/donnees/donnees_departements_region/Codification départements et régions.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;Departements&quot;"/>
@@ -422,8 +422,6 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_IBN0YOglEei0du-bAOr0cw - metadata" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_IBN0YOglEei0du-bAOr0cw - metadata" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -490,9 +488,9 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_bqWzoOgkEei0du-bAOr0cw" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_5PLmUOv8EeiOibTAVHIXng" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/Codification départements et régions.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/BI2/M2_BI/donnees/donnees_departements_region/Codification départements et régions.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;Regions&quot;"/>
@@ -552,7 +550,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/BI/M2_BI/donnees/donnees_premierTraitement/radars/radars_clean.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/enzop/Desktop/MIAGE/TOS_DI-20181026_1147-V7.1.1/workspace/PROJETBIM2/donnees/donnees_premierTraitement/radars/radars_clean.xlsx&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
