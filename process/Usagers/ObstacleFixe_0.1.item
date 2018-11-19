@@ -204,7 +204,7 @@
       <column comment="" key="false" length="-1" name="senc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="catv" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="occutc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="obs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="false" length="-1" name="obs" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="obsm" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="choc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="0" key="false" length="-1" name="manv" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -215,7 +215,7 @@
       <column comment="" key="false" length="-1" name="senc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="catv" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="occutc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="obs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="false" length="-1" name="obs" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="obsm" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="choc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="0" key="false" length="-1" name="manv" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -229,7 +229,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_QC8DkOqgEeiZ9ujK0EmFOw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Ay_WMOwiEeiyAuc1LNYzvQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -240,17 +240,15 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="out">
       <column comment="" key="false" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategorieManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TypeManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ObstacleFixe" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="Num_Acc" expression="row1.Num_Acc " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="CategorieManoeuvre" expression="((row1.manv>=1 &amp;&amp; row1.manv&lt;=10)? &quot;Manoeuvre principale avant l'accident&quot; : (row1.manv>=11 &amp;&amp; row1.manv&lt;=12)? &quot;Changeant de file&quot; : (row1.manv>=13 &amp;&amp; row1.manv&lt;=14)? &quot;Déporté&quot; : (row1.manv>=15 &amp;&amp; row1.manv&lt;=16)? &quot;Tournant&quot; : (row1.manv>=17 &amp;&amp; row1.manv&lt;=18)? &quot;Dépassant&quot; : (row1.manv>=19 &amp;&amp; row1.manv&lt;=24)? &quot;Divers&quot; : &quot;Indéfini&quot;) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="TypeManoeuvre" expression="(row1.manv==1? &quot;Sans changement de direction&quot; : row1.manv==2? &quot;Même sens, même file&quot; : row1.manv==3? &quot;Entre 2 files&quot; : row1.manv==4? &quot;En marche arrière&quot; : row1.manv==5? &quot;A contresens&quot; : row1.manv==6? &quot;En franchissant le terre-plein central&quot; : row1.manv==7? &quot;Dans le couloir bus, dans le même sens&quot; : row1.manv==8? &quot;Dans le couloir bus, dans le sens inverse&quot; : row1.manv==9? &quot;En s'insérant &quot; : row1.manv==10? &quot;En faisant demi-tour sur la chaussée&quot; : row1.manv==11? &quot;A gauche&quot; : row1.manv==12? &quot;A droite&quot; : row1.manv==13? &quot;A gauche&quot; : row1.manv==14? &quot;A droite&quot; : row1.manv==15? &quot;A gauche&quot; : row1.manv==16? &quot;A droite&quot; : row1.manv==17? &quot;A gauche&quot; : row1.manv==18? &quot;A droite&quot; : row1.manv==19? &quot;Traversant la chaussée&quot; : row1.manv==20? &quot;Manoeuvre de stationnement &quot; : row1.manv==21? &quot;Manoeuvre d’évitement &quot; : row1.manv==22? &quot;Ouverture de porte&quot; : row1.manv==23? &quot;Arrêté (hors stationnement)&quot; : row1.manv==24? &quot;En stationnement (avec occupants)&quot; : &quot;Indéfini&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ObstacleFixe" expression="(row1.obs==1? &quot;Véhicule en stationnement&quot; : row1.obs==2? &quot;Arbre&quot; : row1.obs==3? &quot;Glissière métallique&quot; : row1.obs==4? &quot;Glissière béton&quot; : row1.obs==5? &quot;Autre glissière&quot; : row1.obs==6? &quot;Bâtiment, mur, pile de pont&quot; : row1.obs==7? &quot;Support de signalisation verticale ou poste d'appel d'urgence&quot; : row1.obs==8? &quot;Poteau&quot; : row1.obs==9? &quot;Mobilier urbain&quot; : row1.obs==10? &quot;Parapet&quot; : row1.obs==11? &quot;Illot, refuge, borne haute&quot; : row1.obs==12? &quot;Bordure de trottoire&quot; : row1.obs==13? &quot;Fossé, talus, paroi rocheuse&quot; : row1.obs==14? &quot;Autre obstacle fixe sur chaussée&quot; : row1.obs==15? &quot;Autre obstacle fixe sur trotoire ou accotement&quot; : row1.obs==16? &quot;Sortie de chaussée sans obstacle&quot; : &quot;Indéfini&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Num_Veh" expression="row1.num_veh " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -258,7 +256,7 @@
         <mapperTableEntries name="senc" type="id_String" nullable="true"/>
         <mapperTableEntries name="catv" type="id_String" nullable="true"/>
         <mapperTableEntries name="occutc" type="id_String" nullable="true"/>
-        <mapperTableEntries name="obs" type="id_String" nullable="true"/>
+        <mapperTableEntries name="obs" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="obsm" type="id_String" nullable="true"/>
         <mapperTableEntries name="choc" type="id_String" nullable="true"/>
         <mapperTableEntries name="manv" type="id_Integer" nullable="true"/>
@@ -271,8 +269,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="tUnite_1">
       <column comment="" key="false" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategorieManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TypeManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ObstacleFixe" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -280,7 +277,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Laurene/Documents/M2 MIAGE/TOS/TOS_DI-20181026_1147-V7.1.1/workspace/M2_BI/donnees/donnees_premierTraitement/usagers/Manoeuvre.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Laurene/Documents/M2 MIAGE/TOS/TOS_DI-20181026_1147-V7.1.1/workspace/M2_BI/donnees/donnees_premierTraitement/usagers/ObstacleFixe.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -308,8 +305,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out" name="tFileOutputDelimited_1">
       <column comment="" key="false" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategorieManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TypeManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ObstacleFixe" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
