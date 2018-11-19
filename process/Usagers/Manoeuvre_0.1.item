@@ -112,7 +112,9 @@
     <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;vehicules*.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;vehicules_2005.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;vehicules_2011.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;vehicules_2017.csv&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
@@ -240,6 +242,7 @@
       <column comment="" key="false" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CategorieManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TypeManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -248,6 +251,7 @@
         <mapperTableEntries name="Num_Acc" expression="row1.Num_Acc " type="id_Long" nullable="true"/>
         <mapperTableEntries name="CategorieManoeuvre" expression="((row1.manv>=1 &amp;&amp; row1.manv&lt;=10)? &quot;Manoeuvre principale avant l'accident&quot; : (row1.manv>=11 &amp;&amp; row1.manv&lt;=12)? &quot;Changeant de file&quot; : (row1.manv>=13 &amp;&amp; row1.manv&lt;=14)? &quot;Déporté&quot; : (row1.manv>=15 &amp;&amp; row1.manv&lt;=16)? &quot;Tournant&quot; : (row1.manv>=17 &amp;&amp; row1.manv&lt;=18)? &quot;Dépassant&quot; : (row1.manv>=19 &amp;&amp; row1.manv&lt;=24)? &quot;Divers&quot; : &quot;Indéfini&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="TypeManoeuvre" expression="(row1.manv==1? &quot;Sans changement de direction&quot; : row1.manv==2? &quot;Même sens, même file&quot; : row1.manv==3? &quot;Entre 2 files&quot; : row1.manv==4? &quot;En marche arrière&quot; : row1.manv==5? &quot;A contresens&quot; : row1.manv==6? &quot;En franchissant le terre-plein central&quot; : row1.manv==7? &quot;Dans le couloir bus, dans le même sens&quot; : row1.manv==8? &quot;Dans le couloir bus, dans le sens inverse&quot; : row1.manv==9? &quot;En s'insérant &quot; : row1.manv==10? &quot;En faisant demi-tour sur la chaussée&quot; : row1.manv==11? &quot;A gauche&quot; : row1.manv==12? &quot;A droite&quot; : row1.manv==13? &quot;A gauche&quot; : row1.manv==14? &quot;A droite&quot; : row1.manv==15? &quot;A gauche&quot; : row1.manv==16? &quot;A droite&quot; : row1.manv==17? &quot;A gauche&quot; : row1.manv==18? &quot;A droite&quot; : row1.manv==19? &quot;Traversant la chaussée&quot; : row1.manv==20? &quot;Manoeuvre de stationnement &quot; : row1.manv==21? &quot;Manoeuvre d’évitement &quot; : row1.manv==22? &quot;Ouverture de porte&quot; : row1.manv==23? &quot;Arrêté (hors stationnement)&quot; : row1.manv==24? &quot;En stationnement (avec occupants)&quot; : &quot;Indéfini&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Num_Veh" expression="row1.num_veh " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num_Acc" type="id_Long" nullable="true"/>
@@ -269,6 +273,7 @@
       <column comment="" key="false" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CategorieManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TypeManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="128">
@@ -305,6 +310,7 @@
       <column comment="" key="false" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CategorieManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TypeManoeuvre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputDelimited_1">
@@ -322,6 +328,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="CategorieManoeuvre"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_Veh"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
