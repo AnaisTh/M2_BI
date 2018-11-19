@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="320" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="256" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -158,6 +158,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="obsm"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_veh"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
@@ -172,6 +174,8 @@
       <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="obsm"/>
       <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_veh"/>
+      <elementValue elementRef="DECODE" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -180,11 +184,13 @@
       <column comment="" key="false" length="12" name="Num_Acc" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="catv" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="obsm" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="num_veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" key="false" length="12" name="Num_Acc" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="catv" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="obsm" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="num_veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -208,20 +214,23 @@
       <column comment="" key="false" length="-1" name="ObstacleMobile" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="GroupeVehicule" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="TypeVehicule" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Num_Acc" expression="row2.Num_Acc " type="id_Long"/>
         <mapperTableEntries name="ObstacleMobile" expression="row2.obsm==1?&quot;Piéton&quot;:row2.obsm==2?&quot;Véhicule&quot;:row2.obsm==4?&quot;Véhicule sur rail&quot;:row2.obsm==5?&quot;Animal domestique&quot;:row2.obsm==6?&quot;Animal sauvage&quot;:row2.obsm==9?&quot;Autre&quot;:&quot;Indéfini&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="GroupeVehicule" expression="row2.catv==&quot;01&quot;?&quot;2 Roues&quot;:row2.catv==&quot;02&quot;?&quot;2 Roues&quot;:row2.catv==&quot;04&quot;?&quot;2 Roues&quot;:row2.catv==&quot;30&quot;?&quot;2 Roues&quot;:row2.catv==&quot;32&quot;?&quot;2 Roues&quot;:row2.catv==&quot;34&quot;?&quot;2 Roues&quot;:row2.catv==&quot;05&quot;?&quot;2 Roues&quot;:row2.catv==&quot;31&quot;?&quot;2 Roues&quot;:row2.catv==&quot;33&quot;?&quot;2 Roues&quot;:row2.catv==&quot;06&quot;?&quot;2 Roues&quot;:row2.catv==&quot;03&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;07&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;08&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;09&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;10&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;11&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;12&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;35&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;36&quot;?&quot;4 Roues légers&quot;:row2.catv==&quot;13&quot;?&quot;4 Roues lourds&quot;:row2.catv==&quot;14&quot;?&quot;4 Roues lourds&quot;:row2.catv==&quot;15&quot;?&quot;4 Roues lourds&quot;:row2.catv==&quot;16&quot;?&quot;Agricole Spécial&quot;:row2.catv==&quot;17&quot;?&quot;Agricole Spécial&quot;:row2.catv==&quot;20&quot;?&quot;Agricole Spécial&quot;:row2.catv==&quot;21&quot;?&quot;Agricole Spécial&quot;:row2.catv==&quot;19&quot;?&quot;Transports communs&quot;:row2.catv==&quot;40&quot;?&quot;Transports communs&quot;:row2.catv==&quot;18&quot;?&quot;Transports communs&quot;:row2.catv==&quot;37&quot;?&quot;Transports communs&quot;:row2.catv==&quot;38&quot;?&quot;Transports communs&quot;:row2.catv==&quot;39&quot;?&quot;Transports communs&quot;:row2.catv==&quot;99&quot;?&quot;Autre&quot;:&quot;Autre&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="TypeVehicule" expression="row2.catv==&quot;01&quot;?&quot;Bicyclette&quot;:row2.catv==&quot;02&quot;?&quot;Cyclomoteur&lt;50cm3&quot;:row2.catv==&quot;04&quot;?&quot;Scooter immatriculé&quot;:row2.catv==&quot;30&quot;?&quot;Scooter immatriculé&quot;:row2.catv==&quot;32&quot;?&quot;Scooter immatriculé&quot;:row2.catv==&quot;34&quot;?&quot;Scooter immatriculé&quot;:row2.catv==&quot;05&quot;?&quot;Motocyclette&quot;:row2.catv==&quot;31&quot;?&quot;Motocyclette&quot;:row2.catv==&quot;33&quot;?&quot;Motocyclette&quot;:row2.catv==&quot;06&quot;?&quot;Side-car&quot;:row2.catv==&quot;03&quot;?&quot;Voiturette&quot;:row2.catv==&quot;07&quot;?&quot;Véhicule léger seul&quot;:row2.catv==&quot;08&quot;?&quot;Véhicule léger + caravane&quot;:row2.catv==&quot;09&quot;?&quot;Véhicule léger + remoque&quot;:row2.catv==&quot;10&quot;?&quot;Véhicule utilitaire &lt; 1.5T &lt;= PTAC &lt;= 3.5T avec ou sans remorque&quot;:row2.catv==&quot;11&quot;?&quot;Véhicule utilitaire + caravane&quot;:row2.catv==&quot;12&quot;?&quot;Véhicule utilitaire + remorque&quot;:row2.catv==&quot;35&quot;?&quot;Quad&quot;:row2.catv==&quot;36&quot;?&quot;Quad&quot;:row2.catv==&quot;13&quot;?&quot;Poids lourd seul 3.5T &lt; PTAC &lt;= 7.5T&quot;:row2.catv==&quot;14&quot;?&quot;Poids lourd seul > 7.5T&quot;:row2.catv==&quot;15&quot;?&quot;Poids lourd > 3.5T + remorque&quot;:row2.catv==&quot;16&quot;?&quot;Tracteur routier seul&quot;:row2.catv==&quot;17&quot;?&quot;Tracteur routier + semi-remorque&quot;:row2.catv==&quot;20&quot;?&quot;Engin spécial&quot;:row2.catv==&quot;21&quot;?&quot;Tracteur agricole&quot;:row2.catv==&quot;19&quot;?&quot;Tramway&quot;:row2.catv==&quot;40&quot;?&quot;Tramway&quot;:row2.catv==&quot;18&quot;?&quot;Transport en commun&quot;:row2.catv==&quot;37&quot;?&quot;Transport en commun&quot;:row2.catv==&quot;38&quot;?&quot;Transport en commun&quot;:row2.catv==&quot;39&quot;?&quot;Train&quot;:row2.catv==&quot;99&quot;?&quot;Autre véhicule&quot;:&quot;Indéfini&quot; " type="id_String"/>
+        <mapperTableEntries name="Num_Veh" expression="row2.num_veh " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num_Acc" type="id_Long"/>
         <mapperTableEntries name="catv" type="id_String"/>
         <mapperTableEntries name="obsm" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="num_veh" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -233,6 +242,7 @@
       <column comment="" key="false" length="-1" name="ObstacleMobile" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="GroupeVehicule" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="TypeVehicule" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
@@ -270,6 +280,7 @@
       <column comment="" key="false" length="-1" name="ObstacleMobile" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="GroupeVehicule" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="TypeVehicule" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Num_Veh" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="-3" offsetLabelY="0" posX="32" posY="160">
@@ -356,6 +367,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="10" mergeOrder="1" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tUnite_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Num_Veh"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
