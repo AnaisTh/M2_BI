@@ -554,7 +554,7 @@
       <column comment="" key="false" length="-1" name="luminosite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="sortie">
         <mapperTableEntries name="Num_Acc" expression="row8.Num_Acc " type="id_Long" nullable="true"/>
@@ -618,7 +618,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Michael/Downloads/TOS_DI-20181026_1147-V7.1.1/TOS_DI-20181026_1147-V7.1.1/workspace/M2MIAGE/donnees/donnees_accidents/lieux/lieux_2005.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Michael/Downloads/TOS_DI-20181026_1147-V7.1.1/TOS_DI-20181026_1147-V7.1.1/workspace/M2MIAGE/donnees/donnees_accidents/lieux_2005.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -790,7 +790,7 @@
       <column comment="" key="false" length="-1" name="etat_chausee" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row9">
         <mapperTableEntries name="Num_Acc" expression="row4._Num_Acc_ " type="id_String" nullable="true"/>
@@ -861,7 +861,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Michael/Downloads/TOS_DI-20181026_1147-V7.1.1/TOS_DI-20181026_1147-V7.1.1/workspace/M2MIAGE/donnees/donnees_accidents/lieux/lieux_2011.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Michael/Downloads/TOS_DI-20181026_1147-V7.1.1/TOS_DI-20181026_1147-V7.1.1/workspace/M2MIAGE/donnees/donnees_accidents/lieux_2011.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -1015,7 +1015,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Michael/Downloads/TOS_DI-20181026_1147-V7.1.1/TOS_DI-20181026_1147-V7.1.1/workspace/M2MIAGE/donnees/donnees_accidents/lieux/lieux-2017.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Michael/Downloads/TOS_DI-20181026_1147-V7.1.1/TOS_DI-20181026_1147-V7.1.1/workspace/M2MIAGE/donnees/donnees_accidents/lieux_2017.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
