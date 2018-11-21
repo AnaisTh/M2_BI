@@ -271,7 +271,7 @@
       <column comment="" key="false" length="-1" name="longi" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="outUsagers">
         <mapperTableEntries name="Age" expression="2018-row2.an_nais " type="id_Integer"/>
@@ -422,7 +422,7 @@
         <mapperTableEntries name="PrecisionChoc" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Num_Acc_1" expression="row4.Num_Acc " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="Num_Acc" expression="row3.Num_Acc " type="id_Long" operator="="/>
         <mapperTableEntries name="Annee" type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" type="id_String" nullable="true"/>
@@ -852,7 +852,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="outTemps" name="outTemps">
-      <column comment="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Annee" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Mois" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Jour" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -868,7 +868,7 @@
       <column comment="" key="false" length="-1" name="Minute" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="outTemps">
         <mapperTableEntries name="Num_Acc" expression="row5.Num_Acc    " type="id_Long" nullable="true"/>
@@ -906,11 +906,11 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="384">
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_3" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="outTemps" name="tUnite_3">
-      <column comment="" key="true" length="-1" name="Num_Acc_1" nullable="true" originalDbColumnName="Num_Acc" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="12" name="Num_Acc" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Annee" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Mois" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Jour" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1068,7 +1068,7 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="outtest" name="tFileOutputDelimited_2">
@@ -1169,7 +1169,7 @@
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tUnite_3" offsetLabelX="0" offsetLabelY="0" source="tUnite_3" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Num_Acc_1"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Num_Acc"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
