@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
     <module>jobs/process/XML/creer_xml_0.1</module>
+    <module>jobs/process/Usagers/usagersfull_0.1</module>
   </modules>
   <properties>
     <talend.project.name>M2_BI</talend.project.name>
