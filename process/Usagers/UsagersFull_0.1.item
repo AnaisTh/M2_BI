@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="4" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -570,7 +570,7 @@
       <column comment="" key="false" length="-1" name="PrecisionChoc" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="outVehicule">
         <mapperTableEntries name="Num_Acc" expression="row1.Num_Acc  " type="id_Long" nullable="true"/>
@@ -694,10 +694,6 @@
       <column comment="" key="false" length="3" name="com" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="longi" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CodeRegion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Territoire" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NomDep" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CodeDep" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="outtest" name="outtest">
       <column comment="" key="false" length="-1" name="Num_Acc" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
@@ -725,10 +721,6 @@
         <mapperTableEntries name="com" expression="row5.comm " type="id_String" nullable="true"/>
         <mapperTableEntries name="lat" expression="row5.lat " type="id_String" nullable="true"/>
         <mapperTableEntries name="longi" expression="row5.longg " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CodeRegion" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Territoire" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NomDep" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CodeDep" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="outtest">
         <mapperTableEntries name="Num_Acc" expression="row5.Num_Acc     " type="id_Long" nullable="true"/>
@@ -912,9 +904,9 @@
       <elementValue elementRef="OUTPUT_COLUMN" value="NomDep"/>
       <elementValue elementRef="LOOKUP_COLUMN" value="NomDepartement"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="CodeDep"/>
-      <elementValue elementRef="LOOKUP_COLUMN" value="CodeRegion"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CodeRegion"/>
       <elementValue elementRef="LOOKUP_COLUMN" value="CodeDep"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="CodeRegion"/>
+      <elementValue elementRef="LOOKUP_COLUMN" value="CodeRegion"/>
     </elementParameter>
     <elementParameter field="TABLE" name="JOIN_KEY">
       <elementValue elementRef="INPUT_COLUMN" value="dep"/>
