@@ -15,6 +15,7 @@
     <module>jobs/process/Usagers/usagersfull_0.1</module>
     <module>jobs/process/Usagers/essailieu_0.1</module>
     <module>jobs/process/radars/radars_0.1</module>
+    <module>jobs/process/Accidents/ensemblecaracteristiques_0.1</module>
   </modules>
   <properties>
     <talend.project.name>M2_BI</talend.project.name>
