@@ -17,6 +17,7 @@
     <module>jobs/process/radars/radars_0.1</module>
     <module>jobs/process/Accidents/ensemblecaracteristiques_0.1</module>
     <module>jobs/process/Assurances/assurances_0.1</module>
+    <module>jobs/process/Accidents/accidentsfull_0.1</module>
   </modules>
   <properties>
     <talend.project.name>M2_BI</talend.project.name>
