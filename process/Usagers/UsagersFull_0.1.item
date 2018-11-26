@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="516" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="576" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -899,6 +899,8 @@
         <mapperTableEntries name="CategorieUsager" type="id_String"/>
         <mapperTableEntries name="num_veh" expression="" type="id_String"/>
         <mapperTableEntries name="Num_Acc" expression="row3.Num_Acc" type="id_Long"/>
+        <mapperTableEntries name="UtilisationSystemSecurite" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EquipementSecurite" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num_Acc" expression="row7.Num_Acc" type="id_Long" nullable="true"/>
@@ -1326,9 +1328,11 @@
       <column comment="" key="false" length="-1" name="CategorieUsager" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="num_veh" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Num_Acc" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UtilisationSystemSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EquipementSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="outUsagers">
         <mapperTableEntries name="Age" expression="2018-row2.an_nais " type="id_Integer"/>
@@ -1338,6 +1342,8 @@
         <mapperTableEntries name="CategorieUsager" expression="(row2.catu==1 ? &quot;Conducteur&quot; : row2.catu==2 ? &quot;Passager&quot; : row2.catu==3 ? &quot;Piéton&quot;: row2.catu==4 ? &quot;Piéton en roller ou en trottinette&quot; : &quot;Indéfini&quot;)  " type="id_String"/>
         <mapperTableEntries name="num_veh" expression="row2.num_veh  " type="id_String"/>
         <mapperTableEntries name="Num_Acc" expression="row2.Num_Acc  " type="id_Long"/>
+        <mapperTableEntries name="UtilisationSystemSecurite" expression="(row2.secu==11 || row2.secu==21 || row2.secu==31 || row2.secu==41 || row2.secu==91 ? &quot;Utilisé&quot; : row2.secu==12 || row2.secu==22 || row2.secu==32 || row2.secu==42 || row2.secu==92? &quot;Non Utilisé&quot; : &quot;Sans Information d'utilisation&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EquipementSecurite" expression="(row2.secu==11 || row2.secu==12 || row2.secu==13 ? &quot;Casque&quot; :  row2.secu==21 || row2.secu==22 || row2.secu==23? &quot;Ceinture&quot; :  row2.secu==31 || row2.secu==32? &quot;Dispositif Enfant&quot; : row2.secu==41 || row2.secu==42 ? &quot;Equipement Réflechissant&quot;: &quot;Autre&quot;) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num_Acc" type="id_Long"/>
@@ -1366,6 +1372,8 @@
       <column comment="" key="false" length="-1" name="CategorieUsager" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="num_veh" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Num_Acc" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UtilisationSystemSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EquipementSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileInputDelimited_3">
@@ -1506,6 +1514,12 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EquipementSecurite"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UtilisationSystemSecurite"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
