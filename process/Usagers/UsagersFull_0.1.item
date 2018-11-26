@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="576" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="580" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -843,9 +843,11 @@
       <column comment="" key="false" length="-1" name="NomComune" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="lat" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="longi" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UtilisationSystemSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EquipementSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="FinalOut">
         <mapperTableEntries name="Num_Veh" expression="row7.num_veh  " type="id_String" nullable="true"/>
@@ -862,7 +864,7 @@
         <mapperTableEntries name="Sexe" expression="row7.Sexe  " type="id_String"/>
         <mapperTableEntries name="Gravite" expression="row7.Gravite  " type="id_String"/>
         <mapperTableEntries name="Trajet" expression="row7.Trajet  " type="id_String"/>
-        <mapperTableEntries name="CategorieUsager" expression="row7.CategorieUsager  " type="id_String"/>
+        <mapperTableEntries name="CategorieUsager" expression="row7.CategorieUsager" type="id_String"/>
         <mapperTableEntries name="Annee" expression="row3.Annee  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mois" expression="row3.Mois  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Jour" expression="row3.Jour  " type="id_String" nullable="true"/>
@@ -875,6 +877,8 @@
         <mapperTableEntries name="NomComune" expression="row3.NomComune  " type="id_String" nullable="true"/>
         <mapperTableEntries name="lat" expression="row3.lat  " type="id_String" nullable="true"/>
         <mapperTableEntries name="longi" expression="row3.longi  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="UtilisationSystemSecurite" expression="row7.UtilisationSystemSecurite " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EquipementSecurite" expression="row7.EquipementSecurite " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num_Acc" type="id_Long" nullable="true"/>
@@ -1164,6 +1168,8 @@
       <column comment="" key="false" length="-1" name="NomComune" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="lat" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="longi" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UtilisationSystemSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EquipementSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-128" posY="160">
@@ -1464,6 +1470,12 @@
   <connection connectorName="FLOW" label="FinalOut" lineStyle="0" metaname="FinalOut" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tFileOutputDelimited_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="CODE_COMM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EquipementSecurite"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UtilisationSystemSecurite"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
