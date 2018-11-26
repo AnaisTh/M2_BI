@@ -112,10 +112,7 @@
     <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_2005.csv&quot;"/>
-      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_2006.csv&quot;"/>
-      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_2007.csv&quot;"/>
-      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_2010.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;caracteristiques_*.csv&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
@@ -322,7 +319,7 @@
       <column comment="" key="false" length="-1" name="longi" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Num_Acc" expression="row4.Num_Acc" type="id_String"/>
@@ -339,8 +336,8 @@
         <mapperTableEntries name="Intersection" expression="row4.inte==1?&quot;Hors intersection&quot;:row4.inte==2?&quot;Intersection en X&quot;:row4.inte==3?&quot;Intersection en T&quot;:row4.inte==4?&quot;Intersection en Y&quot;:row4.inte==5?&quot;Intersection à plus de 4 branches&quot;:row4.inte==6?&quot;Giratoire&quot;:row4.inte==7?&quot;Place&quot;:row4.inte==8?&quot;Passage à niveau&quot;:row4.inte==9?&quot;Autre intersection&quot;:&quot;Indéfini&quot; " type="id_String"/>
         <mapperTableEntries name="dep" expression="row4.dep " type="id_Integer"/>
         <mapperTableEntries name="com" expression="row4.com " type="id_Integer"/>
-        <mapperTableEntries name="lat" expression="row4.lat.equals(&quot;0&quot;)?&quot;&quot;&#xD;&#xA;:row4.lat.equals(&quot;&quot;)?&quot;&quot;&#xD;&#xA;:row4.lat " type="id_String"/>
-        <mapperTableEntries name="longi" expression="row4.longi.equals(&quot;0&quot;)?&quot;&quot;&#xD;&#xA;:row4.longi.equals(&quot;&quot;)?&quot;&quot;&#xD;&#xA;:row4.longi " type="id_String"/>
+        <mapperTableEntries name="lat" expression="row4.lat.equals(&quot;0000000&quot;)?&quot;&quot;&#xD;&#xA;:row4.lat.equals(&quot;&quot;)?&quot;&quot;&#xD;&#xA;:row4.lat " type="id_String"/>
+        <mapperTableEntries name="longi" expression="row4.longi.equals(&quot;0000000&quot;)?&quot;&quot;&#xD;&#xA;:row4.longi.equals(&quot;&quot;)?&quot;&quot;&#xD;&#xA;:row4.longi " type="id_String"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num_Acc" type="id_String"/>
@@ -1050,10 +1047,7 @@
     <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;lieux_2005.csv&quot;"/>
-      <elementValue elementRef="FILEMASK" value="&quot;lieux_2006.csv&quot;"/>
-      <elementValue elementRef="FILEMASK" value="&quot;lieux_2007.csv&quot;"/>
-      <elementValue elementRef="FILEMASK" value="&quot;lieux_2010.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="&quot;lieux_*.csv&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
@@ -1271,7 +1265,7 @@
       <column comment="" key="false" length="-1" name="etat_chausee" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfrow9">
         <mapperTableEntries name="Num_Acc" expression="row3._Num_Acc_ " type="id_String" nullable="true"/>
