@@ -326,12 +326,12 @@
       <column comment="" key="false" length="-1" name="Longitude" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="res">
         <mapperTableEntries name="Tarif" expression="Integer.parseInt(row2.tarif)" type="id_Integer"/>
-        <mapperTableEntries name="Annee" expression="row2.mois " type="id_String"/>
-        <mapperTableEntries name="Mois" expression="row2.annee" type="id_String"/>
+        <mapperTableEntries name="Annee" expression="row2.annee" type="id_String"/>
+        <mapperTableEntries name="Mois" expression="row2.mois" type="id_String"/>
         <mapperTableEntries name="Jour" type="id_String" nullable="true"/>
         <mapperTableEntries name="Heure" type="id_String" nullable="true"/>
         <mapperTableEntries name="Minute" type="id_String" nullable="true"/>
