@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="683" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="512" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -847,7 +847,7 @@
       <column comment="" key="false" length="-1" name="EquipementSecurite" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="FinalOut">
         <mapperTableEntries name="Num_Veh" expression="row7.num_veh  " type="id_String" nullable="true"/>
@@ -1349,7 +1349,7 @@
         <mapperTableEntries name="num_veh" expression="row2.num_veh  " type="id_String"/>
         <mapperTableEntries name="Num_Acc" expression="row2.Num_Acc  " type="id_Long"/>
         <mapperTableEntries name="UtilisationSystemSecurite" expression="(row2.secu.equals(&quot;11&quot;) || row2.secu.equals(&quot;21&quot;) || row2.secu.equals(&quot;31&quot;) || row2.secu.equals(&quot;41&quot;) || row2.secu.equals(&quot;91&quot;) ? &quot;Utilise&quot; : row2.secu.equals(&quot;12&quot;) || row2.secu.equals(&quot;22&quot;) || row2.secu.equals(&quot;32&quot;) || row2.secu.equals(&quot;42&quot;) || row2.secu.equals(&quot;92&quot;)? &quot;Non Utilise&quot; : &quot;Sans information d'utilisation&quot;) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="EquipementSecurite" expression="(row2.secu.equals(&quot;11&quot;) || row2.secu.equals(&quot;12&quot;) || row2.secu.equals(&quot;13&quot;) ? &quot;Casque&quot; :  row2.secu.equals(&quot;21&quot;) || row2.secu.equals(&quot;22&quot;) || row2.secu.equals(&quot;23&quot;)? &quot;Ceinture&quot; :  row2.secu.equals(&quot;31&quot;) || row2.secu.equals(&quot;32&quot;)? &quot;Dispositif Enfant&quot; : row2.secu.equals(&quot;41&quot;) || row2.secu.equals(&quot;42&quot;)? &quot;Equipement reflechissant&quot;: &quot;Autre&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EquipementSecurite" expression="(row2.secu.equals(&quot;11&quot;) || row2.secu.equals(&quot;12&quot;) || row2.secu.equals(&quot;13&quot;) ? &quot;Ceinture&quot; :  &#xD;&#xA;&#xD;&#xA;row2.secu.equals(&quot;21&quot;) || row2.secu.equals(&quot;22&quot;) || row2.secu.equals(&quot;23&quot;)? &quot;Casque&quot; :  &#xD;&#xA;&#xD;&#xA;row2.secu.equals(&quot;31&quot;) || row2.secu.equals(&quot;32&quot;)? &quot;Dispositif Enfant&quot; :&#xD;&#xA;&#xD;&#xA; row2.secu.equals(&quot;41&quot;) || row2.secu.equals(&quot;42&quot;)? &quot;Equipement reflechissant&quot;: &#xD;&#xA; &#xD;&#xA; &quot;Autre&quot;) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num_Acc" type="id_Long"/>
