@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <column comment="" default="" key="false" label="Age" length="-1"
+        nullable="false" originalDbColumnName="Age" originalLength="-1"
+        pattern="" precision="-1" talendType="id_Integer" type=""/>
+    <column comment="" default="" key="false" label="Annee" length="-1"
+        nullable="false" originalDbColumnName="Annee"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Mois" length="-1"
+        nullable="false" originalDbColumnName="Mois" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Jour" length="-1"
+        nullable="false" originalDbColumnName="Jour" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Heure" length="-1"
+        nullable="false" originalDbColumnName="Heure"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Minute" length="-1"
+        nullable="false" originalDbColumnName="Minute"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Pays" length="-1"
+        nullable="false" originalDbColumnName="Pays" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Territoire"
+        length="-1" nullable="false" originalDbColumnName="Territoire"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Region" length="-1"
+        nullable="false" originalDbColumnName="Region"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Departement"
+        length="-1" nullable="false" originalDbColumnName="Departement"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Commune"
+        length="-1" nullable="false" originalDbColumnName="Commune"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Latitude"
+        length="-1" nullable="true" originalDbColumnName="Latitude"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_Integer" type=""/>
+    <column comment="" default="" key="false" label="Longitude"
+        length="-1" nullable="true" originalDbColumnName="Longitude"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_Integer" type=""/>
+    <column comment="" default="" key="false" label="TypeChoc"
+        length="-1" nullable="false" originalDbColumnName="TypeChoc"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="PrecisionChoc"
+        length="-1" nullable="false"
+        originalDbColumnName="PrecisionChoc" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="ObstacleFixe"
+        length="-1" nullable="false" originalDbColumnName="ObstacleFixe"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="ObstacleMobile"
+        length="-1" nullable="false"
+        originalDbColumnName="ObstacleMobile" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Gravite"
+        length="-1" nullable="false" originalDbColumnName="Gravite"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Sexe" length="-1"
+        nullable="false" originalDbColumnName="Sexe" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Trajet" length="-1"
+        nullable="false" originalDbColumnName="Trajet"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false"
+        label="UtilisationSystemeSecurite" length="-1" nullable="false"
+        originalDbColumnName="UtilisationSystemeSecurite"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="EquipementSecurite"
+        length="-1" nullable="false"
+        originalDbColumnName="EquipementSecurite" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="GroupeVehicule"
+        length="-1" nullable="false"
+        originalDbColumnName="GroupeVehicule" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="TypeVehicule"
+        length="-1" nullable="false" originalDbColumnName="TypeVehicule"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="CategorieManoeuvre"
+        length="-1" nullable="false"
+        originalDbColumnName="CategorieManoeuvre" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="TypeManoeuvre"
+        length="-1" nullable="false"
+        originalDbColumnName="TypeManoeuvre" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="CategorieUsager"
+        length="-1" nullable="false"
+        originalDbColumnName="CategorieUsager" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+</schema>

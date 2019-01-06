@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <column comment="" default="" key="false" label="Annee" length="-1"
+        nullable="false" originalDbColumnName="Annee"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Mois" length="-1"
+        nullable="false" originalDbColumnName="Mois" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Jour" length="-1"
+        nullable="false" originalDbColumnName="Jour" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Heure" length="-1"
+        nullable="true" originalDbColumnName="Heure" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Minute" length="-1"
+        nullable="true" originalDbColumnName="Minute"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Pays" length="-1"
+        nullable="false" originalDbColumnName="Pays" originalLength="-1"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Territoire"
+        length="-1" nullable="false" originalDbColumnName="Territoire"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Region" length="-1"
+        nullable="false" originalDbColumnName="Region"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Departement"
+        length="-1" nullable="false" originalDbColumnName="Departement"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Commune"
+        length="-1" nullable="true" originalDbColumnName="Commune"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Latitude"
+        length="-1" nullable="true" originalDbColumnName="Latitude"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="Longitude"
+        length="-1" nullable="true" originalDbColumnName="Longitude"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="TypeRadar"
+        length="-1" nullable="true" originalDbColumnName="TypeRadar"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="NomRadar"
+        length="-1" nullable="true" originalDbColumnName="NomRadar"
+        originalLength="-1" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+</schema>
